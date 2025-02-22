@@ -6,6 +6,9 @@ source <(curl -s https://raw.githubusercontent.com/R1M-NODES/utils/master/common
 # Відображення логотипу
 printLogo
 
+sudo apt update -y
+sudo apt install mc wget curl git htop netcat net-tools unzip jq build-essential ncdu tmux make cmake clang pkg-config libssl-dev protobuf-compiler bc lz4 screen -y
+
 # Встановлення Docker та Docker Compose
 printGreen "Install Docker and Docker Compose"
 bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/utils/master/docker-install.sh)
